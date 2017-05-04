@@ -35,9 +35,9 @@ varList3 = varList1.addList(varList2);
 % Verify varList3 consists of five variables
 varList3.Length
 
-%% Create a sample by latin-hypercube design in the variable space
+%% Create a sample by Latin-hypercube design in the variable space
 % This function creates a nSample-by-nVar matrix that samples the
-% parameter space by latin-hypercube-design method
+% parameter space by Latin-hypercube-design method
 nSample = 20;
 varSample = varList3.makeLHSsample(nSample);
 
@@ -46,7 +46,7 @@ size(varSample)
 
 %% Conclusion
 % In this demo, we saw how to create a |VariableList| object and how to 
-% appened another |VariableList| object together.  We also saw how to 
+% append another |VariableList| object together.  We also saw how to 
 % sample the domain defined by the |VariableList| object. 
 % More information can be found with |help|. 
 help generateVar

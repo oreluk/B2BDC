@@ -8,7 +8,7 @@ varList = generateVar(varName,H,varVal);
 
 %% Create a quadratic model
 % To create a B2BDC.B2Bmodels.QModel object by input the coefficient matrix
-% and vairable information
+% and variable information
 
 % Create a random coefficient matrix
 nVar = size(H,1);
@@ -22,7 +22,7 @@ Qmodel = generateModel(coefMatrix,varList);
 
 %% Create a rational quadratic model (1)
 % To create a B2BDC.B2Bmodels.RQModel object by input the coefficient matrix
-% of both numerator and denominator, vairable information and condition
+% of both numerator and denominator, variable information and condition
 % number K for the denominator
 
 % Create a random coefficient matrix for nominator

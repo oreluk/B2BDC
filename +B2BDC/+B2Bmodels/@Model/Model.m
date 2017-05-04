@@ -14,7 +14,7 @@ classdef Model < handle
     
     properties (Dependent)
         VarRanges % A nVar-by-2 matrix represents the range of all variables associated with the model
-        VarNames  % A cell array including the nameof all variables associated with the model 
+        VarNames  % A cell array including the name of all variables associated with the model 
     end
     
     methods
@@ -49,7 +49,7 @@ classdef Model < handle
     end
     
     methods (Abstract)
-        %   Y = EVAL(OBJ, X) evaulates a model at X sampled points to
+        %   Y = EVAL(OBJ, X) evaluates a model at X sampled points to
         %   produce a column vector Y of the model's output.
         
         y = eval(obj,X,varObj)

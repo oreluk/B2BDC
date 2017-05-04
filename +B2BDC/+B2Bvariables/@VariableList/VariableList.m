@@ -50,7 +50,7 @@ classdef VariableList < B2BDC.Util.IContainer
       end
       
       function xSample = makeLHSsample(obj,nSample)
-         %   XSAMPLE = MAKELHSSAMPLE(OBJ, NSAMPLE) returns latin hypercube 
+         %   XSAMPLE = MAKELHSSAMPLE(OBJ, NSAMPLE) returns Latin hypercube 
          %   samples of the VariableList OBJ, within the Variable 
          %   LowerBound and UpperBound. NSAMPLE specifies the number of 
          %   sample points to return from the VariableList domain.
@@ -95,7 +95,7 @@ classdef VariableList < B2BDC.Util.IContainer
          %   OBJ = SCALE(OBJ, FACTOR) returns a VariableList OBJ where all 
          %   variables have been scaled by FACTOR. FACTOR can be a
          %   vector of length two where the lower bound is scaled by the
-         %   first element and the upper bound is scaled by the scond.
+         %   first element and the upper bound is scaled by the second.
          %   FACTOR also can be a nVar-by-2 matrix which scales each 
          %   Variable LowerBound and UpperBound by the corresponding 
          %   elements of the FACTOR. 
@@ -226,7 +226,7 @@ classdef VariableList < B2BDC.Util.IContainer
          %          bounds (new observed values)
          %  idx - A cell array of variable names or an index array of
          %        length nChange that specifies the corresponding variables
-         %        with repsect to the new bounds. If this input is
+         %        with respect to the new bounds. If this input is
          %        not given and the newBD matches the length of the
          %        VariableList, it modifies all variables in the
          %        VariableList
@@ -276,7 +276,7 @@ classdef VariableList < B2BDC.Util.IContainer
       function newVar = makeSubset(obj,varIdx)
          % NEWVAR = MAKESUBSET(OBJ,INDEX) returns a VariableList object
          % including only a subset of the original VariableList object
-         % specifed by the index input
+         % specified by the index input
          
          if ischar(varIdx)
             [~,id,~] = intersect(varIdx,{obj.Values.Name});

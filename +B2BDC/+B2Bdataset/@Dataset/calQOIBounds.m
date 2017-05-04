@@ -7,7 +7,7 @@ function qoiBound = calQOIBounds(obj, index, opt)
 %
 %   QOIBOUND = CALQOIBOUNDS(OBJ, INDEX) returns a n-by-2 matrix containing 
 %   the outer bounds of DatasetUnits specified by INDEX. INDEX is either a 
-%   cell array of DatasetUnit names or a vector of indicies of the n number
+%   cell array of DatasetUnit names or a vector of indices of the n number
 %   of DatasetsUnits to be calculated. 
 %   
 %   QOIBOUND = CALQOIBOUNDS(OBJ, INDEX, OPT) the OPT input can be used to 

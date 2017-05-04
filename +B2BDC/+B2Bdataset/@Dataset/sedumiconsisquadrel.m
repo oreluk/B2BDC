@@ -3,7 +3,7 @@ function [y,s] = sedumiconsisquadrel(obj,opt,abE)
 % B2BDC.B2Bdataset.Dataset object through cvx for the case when all
 % surrogate models are quadratic functions.
 % frac - Fraction of extra constraints used in the optimization
-%        0 < frac < 100, if frac == -1, then automatically linear paris
+%        0 < frac < 100, if frac == -1, then automatically linear pairs
 %        with influence factor greater than 5% of the most influential pair
 %        will be included
 % The problem is formed in the dual format, and the dual variables are
@@ -52,7 +52,7 @@ pars.fid = 0;
 S = reshape(xopt(n_opt+2:end),n_variable+1,n_variable+1);
 S = 0.5*(S+S');
 if info.pinf ~= 0 || info.dinf ~= 0 || info.numerr ~= 0
-   disp('Not both primal/dual problem are feasible or there exsit')
+   disp('Not both primal/dual problem are feasible or there exist')
    disp('numerical inaccuracy, please review the results with cautions')
 end
 y = yopt(end);

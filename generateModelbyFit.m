@@ -6,14 +6,14 @@ function y = generateModelbyFit(X,Y,vars,mtype,opt,kk)
 % The input arguments are:
 % 
 %   X    -  nSample-by-nVar matrix of x data
-%   Y    -  nSample-by-1 colum vector of y data
+%   Y    -  nSample-by-1 column vector of y data
 %  vars  -  A B2BDC.B2Bvariables.VariableList object contains variable
 %           informations (name, domain etc.)
 %  mtype -  The model type that fits the data defined as following strings
-%           'qinf': qudaratic model with infinity norm error minimized
+%           'qinf': quadratic model with infinity norm error minimized
 %           'q2norm': quadratic model with 2 norm error minimized
 %           'rq': rational quadratic model with infinity norm error minimized
-%   kk   -  The parameter used to upper bound the denominator of ratioanl
+%   kk   -  The parameter used to upper bound the denominator of rational
 %           quadratic model over its variable domain 
 
 %  Created: Nov 1, 2015    Wenyu Li

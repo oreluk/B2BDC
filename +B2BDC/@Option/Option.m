@@ -1,5 +1,5 @@
 classdef Option < handle
-   % A B2BDC.Option object that specifies the optimization crieteria.
+   % A B2BDC.Option object that specifies the optimization criteria.
    % The syntax of the input and the meaning of each property are in the
    % following:
    % opt = B2BDC.Option(PropName, PropValue ... )
@@ -27,7 +27,7 @@ classdef Option < handle
    %               calculation
    % ---------------------------------------------------------------------
    % TolConsis: The tolerance used in bi-sectional algorithm in consistency
-   %            mearure outer bound calculation
+   %            measure outer bound calculation
    % ---------------------------------------------------------------------
    % Display:
    %   true  - Display the progress information in the optimization
@@ -54,7 +54,7 @@ classdef Option < handle
    %           in SOS optimization process for polynomial models.
    % ---------------------------------------------------------------------
    % MaxPWsubdom: 
-   %     N   - A positive integer that defines the maximum subdomains a
+   %     N   - A positive integer that defines the maximum sub-domains a
    %           piecewise model can have
    % ---------------------------------------------------------------------
    % PWTol:
@@ -63,7 +63,7 @@ classdef Option < handle
    
    
    % Created: July 12, 2015    Wenyu Li
-   %  Modified: Septempber 2, 2015   Wenyu Li (Data normalization option added)
+   %  Modified: September 2, 2015   Wenyu Li (Data normalization option added)
    
    
    properties

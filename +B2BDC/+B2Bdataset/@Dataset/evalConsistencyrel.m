@@ -2,7 +2,7 @@ function evalConsistencyrel(obj,b2bopt)
 % Calculate the inner and outer bound for the consistency measure (in 
 % percentage) of a B2BDC.B2Bdataset.Dataset object
 % frac - Fraction of extra constraints used in the optimization
-%        0 < frac < 100, if frac == -1, then automatically linear paris
+%        0 < frac < 100, if frac == -1, then automatically linear pairs
 %        with influence factor greater than 5% of the most influential pair
 %        will be included
 % disflag - logical indication whether or not to display progress
@@ -10,7 +10,7 @@ function evalConsistencyrel(obj,b2bopt)
 
 % Created: June 17, 2015      Wenyu Li
 % Modified: June 28, 2015      Wenyu Li    (sensitivity added)
-% Modified: July 13, 2015     Wenyu Li   (Gradient and hessian provided)
+% Modified: July 13, 2015     Wenyu Li   (Gradient and Hessian provided)
 
 
 frac = b2bopt.ExtraLinFraction;

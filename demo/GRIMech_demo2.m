@@ -10,7 +10,7 @@ addpath(str);
 
 %% Loading GRI-Mech 3.0 dataset 
 % The GRI-Mech 3.0 |Dataset| object |dsGRI| is constructed from an Excel 
-% spreadsheet and a MATLAB .mat file.  For a detailed walkthrough of these
+% spreadsheet and a MATLAB .mat file.  For a detailed walk through of these
 % steps, please refer to |GRIMech_demo1.m|.
 
 [~,~,experimentData] = xlsread('GRIMech_expdata.xls');
@@ -155,16 +155,16 @@ dsGRI.isFeasiblePoint(xFeas')
 % With quadratic and rational quadratic models, these optimizations cannot
 % be solved exactly.  Instead, we can efficiently bracket both optimization problems
 % with inner and outer bounds.  Taking just the outer bounds leads to a 
-% prediction range guarenteed to contain the true pQOI range.  
+% prediction range guaranteed to contain the true pQOI range.  
 
 %% Example: Posterior bounds on model variables 
 % In this example, the posterior bounds for variables 20 and 33 of |dsGRI| are
 % calculated using |calVarBounds|, which takes a |nIndex-by-1| vector of 
 % variable indices, where |nIndex|  is the number of indices, and a
 % |B2BDC.Option| file as inputs and returns an |nIndex-by-2| matrix.  The j-th
-% row of the returned array contains the lower bound approximiation of the
+% row of the returned array contains the lower bound approximation of the
 % posterior minimum followed by the upper bound approximation of the posterior 
-% maximum.  Therefore, the true posterior range is guarenteed to be
+% maximum.  Therefore, the true posterior range is guaranteed to be
 % contained between these quantities.
 
 Opt = generateOpt('Display',false);
@@ -188,9 +188,9 @@ plotBounds(varBndsPrior, varBndsPosterior, varBndName);
 % In this example, the posterior bounds for eQOIs 15 and 30 are
 % calculated using |calQOIBounds|, which takes a |nIndex-by-1| vector of QOI indices and a
 % |B2BDC.Option| file as inputs and returns an |nIndex-by-2| matrix.  Much as before, the j-th
-% row of the returned array contains the lower bound approximiation of the
+% row of the returned array contains the lower bound approximation of the
 % posterior minimum followed by the upper bound approximation of the posterior 
-% maximum.  The true posterior range is guarenteed to be
+% maximum.  The true posterior range is guaranteed to be
 % contained between these quantities. 
 
 i2 = [15, 30]; %i2 = [1:nQOI]

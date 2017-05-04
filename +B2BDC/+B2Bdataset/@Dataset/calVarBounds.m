@@ -6,7 +6,7 @@ function xBound = calVarBounds(obj,index,opt)
 %
 %   XBOUND = CALVARBOUNDS(OBJ, INDEX) returns a n-by-2 matrix containing 
 %   the outer bounds of variables specified by INDEX. INDEX is either a 
-%   cell array of variable names or a vector of indicies of the n number of 
+%   cell array of variable names or a vector of indices of the n number of 
 %   variables to be calculated. 
 %   
 %   XBOUND = CALVARBOUNDS(OBJ, INDEX, OPT) the optional input of OPT can be 

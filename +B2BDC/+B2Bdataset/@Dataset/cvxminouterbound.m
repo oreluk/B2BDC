@@ -3,7 +3,7 @@ function [minout,minSensitivity] = cvxminouterbound(obj,QOIobj, frac)
 % target QOI subject to the constraints within the dataset through cvx
 % QOIobj - A B2BDC.B2Bmodel.Model object specifies the QOI
 % frac - Fraction of extra constraints used in the optimization
-%        0 < frac < 100, if frac == -1, then automatically linear paris
+%        0 < frac < 100, if frac == -1, then automatically linear pairs
 %        with influence factor greater than 5% of the most influential pair
 %        will be included
 

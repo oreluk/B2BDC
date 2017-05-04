@@ -42,8 +42,8 @@ end
 % measure value.If the lower bound of this interval is positive, then the 
 % dataset is consistent and the return logical value is true. If the upper 
 % bound of this interval is negative, then the dataset is inconsistent and 
-% otherwise the dataset is undetermined. In both incosistent and
-% undererminded case, the returned logical value is false.
+% otherwise the dataset is undetermined. In both inconsistent and
+% undetermined case, the returned logical value is false.
 
 y = ds.isConsistent;
 CM = ds.ConsistencyMeasure

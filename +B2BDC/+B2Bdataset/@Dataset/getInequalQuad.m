@@ -6,7 +6,7 @@ function [Qunits, Qx, Qextra, n_extra, extraIdx] = getInequalQuad(obj,bds,frac)
 %  bds  -  A nUnits-by-2 matrix defines the lower and upper bounds for each
 %          surrogate model in the dataset unit.
 %  frac -  Fraction of extra constraints used in the optimization
-%          0 < frac < 100, if frac == -1, then automatically linear paris
+%          0 < frac < 100, if frac == -1, then automatically linear pairs
 %          with influence factor greater than 5% of the most influential pair
 %          will be included
 % Output:

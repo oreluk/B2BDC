@@ -84,7 +84,7 @@ function dsNew = selfInconsisAnalysis(obj,opt)
  p2.Visible = 'off';
  bg = uibuttongroup('Visible','off','Units','normalized',...
     'Position',[0.02,0.1,0.15,0.2],'SelectionChangeFcn',@bgselection);
- r1 = uicontrol('Parent',bg,'Style','radiobutton','String','Number of apperance',...
+ r1 = uicontrol('Parent',bg,'Style','radiobutton','String','Number of appearance',...
     'Units','normalized','Position',[0.1,0.45,0.8,0.3],'FontSize',11);
  r2 = uicontrol('Parent',bg,'Style','radiobutton','String','Average sensitivity value',...
     'Units','normalized','Position',[0.1,0.15,0.8,0.3],'FontSize',11);
@@ -116,7 +116,7 @@ function dsNew = selfInconsisAnalysis(obj,opt)
    function bgselection(ss,dd)
       n1 = ss.SelectedObject.String;
       switch n1
-         case 'Number of apperance'
+         case 'Number of appearance'
             p1.Visible = 'on';
             p2.Visible = 'off';
          case 'Average sensitivity value'

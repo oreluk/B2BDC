@@ -1,8 +1,8 @@
 function [y,s] = sedumiconsisrel(obj,yin,opt,abE)
 % Calculate outer bound for the consistency measure of a
-% B2BDC.B2Bdataset.Dateset object through sedumi
+% B2BDC.B2Bdataset.Dataset object through SeDuMi
 % frac - Fraction of extra constraints used in the optimization
-%        0 < frac < 100, if frac == -1, then automatically linear paris
+%        0 < frac < 100, if frac == -1, then automatically linear pairs
 %        with influence factor greater than 5% of the most influential pair
 %        will be included
 

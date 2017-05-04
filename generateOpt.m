@@ -26,7 +26,7 @@ function  y = generateOpt(varargin)
    %               calculation
    % ---------------------------------------------------------------------
    % TolConsis: The tolerance used in bi-sectional algorithm in consistency
-   %            mearure outer bound calculation
+   %            measure outer bound calculation
    % ---------------------------------------------------------------------
    % Display:
    %   true  - Display the progress information in the optimization
@@ -53,7 +53,7 @@ function  y = generateOpt(varargin)
    %           in SOS optimization process for polynomial models.
    % ---------------------------------------------------------------------
    % MaxPWsubdom: 
-   %     N   - A positive integer that defines the maximum subdomains a
+   %     N   - A positive integer that defines the maximum sub-domains a
    %           piecewise model can have
    % ---------------------------------------------------------------------
    % PWTol:

@@ -64,7 +64,7 @@ classdef Dataset < handle
                   allName = {obj.DatasetUnits.Values.Name};
                   [~,id] = intersect(allName, dsUnitObj(i).Name);
                   if ~isempty(id)
-                     error(['The dataset unit ' allName{id} ' is already exsit in the dataset'])
+                     error(['The dataset unit ' allName{id} ' is already exist in the dataset'])
                   end
                end
                obj.DatasetUnits = add(obj.DatasetUnits,dsUnitObj(i));
@@ -101,7 +101,7 @@ classdef Dataset < handle
       
       function y = isConsistent(obj,opt)
          %   Y = ISCONSISTENT(OBJ) returns a logical true if the
-         %   conistency measure of the dataset OBJ is positive.
+         %   consistency measure of the dataset OBJ is positive.
          %
          %   Y = ISCONSISTENT(OBJ, OPT) the optional input of OPT can be
          %   used to modify the printed output or optimization criteria.
@@ -155,7 +155,7 @@ classdef Dataset < handle
             %   DatasetUnits from the dataset OBJ and will return an
             %   n-by-1 array of deleted DatasetUnits in DELETEDUNITS.
             %   ID will specify which DatasetUnits to delete by either a cell
-            %   array of the DatasetUnit names or a vector of indicies of the
+            %   array of the DatasetUnit names or a vector of indices of the
             %   n number of DatasetUnits to be removed.
             
             deletedUnits = [];
@@ -197,7 +197,7 @@ classdef Dataset < handle
           %   If ObservedValue is not provided the mean of the provided 
           %   LowerBound and UpperBound will be used. IDX is either a cell 
           %   array of n DatasetUnit names or a vector of length n of 
-          %   indicies of DatasetsUnits to be calculated. 
+          %   indices of DatasetsUnits to be calculated. 
           
           allUnitName = {obj.DatasetUnits.Values.Name};
           if nargin == 3
@@ -295,7 +295,7 @@ classdef Dataset < handle
          %
          %   Y = EVAL(OBJ, X, DSIDX) an input of DSIDX can be passed as
          %   either a a cell array of DatasetUnit names or a vector of
-         %   indicies of the nUnit number of DatasetsUnits to be calculated.
+         %   indices of the nUnit number of DatasetsUnits to be calculated.
          
          if nargin > 0
             if size(X,2) ~= obj.Variables.Length;
@@ -362,7 +362,7 @@ classdef Dataset < handle
    
    methods (Hidden = true)
        function y = length(obj)
-           % LENGTH(OBJ) returns the number of DatsetUnits in the Dateset
+           % LENGTH(OBJ) returns the number of DatsetUnits in the Dataset
            % OBJ
            
            y = obj.Length;
@@ -418,7 +418,7 @@ classdef Dataset < handle
        [y,s] = cvxconsisrel(obj,yin,frac,tolerance)
        [y,s] = cvxconsisquadabs(obj,QOIobj,frac)
        
-       % Sedumi Functions
+       % SeDuMi Functions
        [y,s] = sedumiconsisabs(obj,opt,abE)
        [y,s] = sedumiconsisquadabs(obj,opt,abE)
        [y,s] = sedumiconsisrel(obj,yin,opt,abE)

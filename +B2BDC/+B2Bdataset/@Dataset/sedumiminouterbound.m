@@ -1,9 +1,9 @@
 function [minout,minSensitivity] = sedumiminouterbound(obj, QOIobj, frac,abE)
 % Calculate the outer bound of minimum values of the dataset
-% target QOI subject to the constraints within the dataset through sedumi
+% target QOI subject to the constraints within the dataset through SeDuMi
 % QOIobj - A B2BDC.B2Bmodel.Model object specifies the QOI
 % frac - Fraction of extra constraints used in the optimization
-%        0 < frac < 100, if frac == -1, then automatically linear paris
+%        0 < frac < 100, if frac == -1, then automatically linear pairs
 %        with influence factor greater than 5% of the most influential pair
 %        will be included
 

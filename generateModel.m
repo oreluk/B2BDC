@@ -15,7 +15,7 @@ function modelObj = generateModel(varargin)
 % (b) modelObj = generateQModel(vecCoef, varList)
 %  input:
 %    vecCoef   - A (nVar+1)-by-1 vector that defines the function of the
-%                linear model such tshat M(x) = vecCoef^T * [1;x]
+%                linear model such that M(x) = vecCoef^T * [1;x]
 %    varList   - A B2BDC.B2Bvariables.VariableList object contains variable
 %                informations (name, domain etc.)
 %  output:
@@ -24,7 +24,7 @@ function modelObj = generateModel(varargin)
 % (c) modelObj = generateQModel(GramN, GramD, varList,k)
 %  input:
 %      GramN   - A (nVar+1)-by-(nVar+1) symmetric matrix that defines the
-%                function of the numinator of the rational quadratic model 
+%                function of the numerator of the rational quadratic model 
 %                such that N(x) = [1;x]' * GramN * [1;x]
 %      GramD   - A (nVar+1)-by-(nVar+1) symmetric matrix that defines the
 %                function of the denominator of the rational quadratic model 

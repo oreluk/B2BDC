@@ -7,12 +7,12 @@ function rqModel = sedumirqfitinfnorm(X,Y,vars,b2bopt,K)
 % K is not provided, the function itself will implement a 4-fold cross
 % validation to select a best K value between 2 and 20. It returns a
 % B2BDC.B2Bmodel.RQModel object
-% Input format for sedumi solver is created based on the dual variable 
+% Input format for SeDuMi solver is created based on the dual variable 
 %  y = [ n  D  lambda  gamma r]' :
 %  N - Vector coefficient for numerator quadratics
 %  D - Vector coefficient for denominator quadratics
-% lambda - Laguagian multipliers for box constraint of x with D > 1
-% gamma  - Laguagian multipliers for box constraint of x with D < K
+% lambda - Lagrangian multipliers for box constraint of x with D > 1
+% gamma  - Lagrangian multipliers for box constraint of x with D < K
 %  r - A variable used to create the semidefinite constraint
 
 

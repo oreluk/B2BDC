@@ -13,7 +13,7 @@ function [QOIrange, xOpt, QOISensitivity] = predictQOI(obj, QOIobj, B2Bopt)
 
 % Created: June 15, 2015   Wenyu Li
 %  Modified: July 5, 2015   Wenyu Li (Sensitivity added)
-%  Modified: July 14, 2015   Wenyu Li  (Gradient and hessian added)
+%  Modified: July 14, 2015   Wenyu Li  (Gradient and Hessian added)
 
 xOpt = zeros(obj.Variables.Length,2);
 if nargin < 3

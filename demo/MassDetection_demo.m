@@ -1,7 +1,7 @@
 %% B2BDC Example: Mass detection from impedance magnitude measurements 
 % In this example, we demonstrate a B2BDC analysis of an existing simulation code.
 % Specifically, we use the B2BDC toolbox to analyze a series connection 
-% of 12 mass-spring-damper systems with identical stiffness and damping coefficents. 
+% of 12 mass-spring-damper systems with identical stiffness and damping coefficients. 
 % The first 6 masses are uncertain and serve as the variables for the analysis. 
 %
 % <<..\MassDetectionExample\MassDetectionDiagram.png>>
@@ -46,7 +46,7 @@ varList = generateVar(varName,H);
 % The function |makeLHSsample| takes a specification on the number of
 % samples and returns a |numberOfSamples-by-numberOfVariables| 
 % Latin hypercube design matrix. In this case, we are sampling the
-% uncertain region of the 6 unkown masses. These samples will be used to
+% uncertain region of the 6 unknown masses. These samples will be used to
 % train and validate the surrogate models for the QOIs. 
 
 xTrain = varList.makeLHSsample(NTrainSamples);
@@ -121,7 +121,7 @@ qAbsErrMax(2:3)
 % when constructing the dataset units. If we wished to use the in-sample error, the
 % following code would create an option file that automates that process:
 % |Opt = generateOpt('Display',false,'AddFitError',true);|. We could then 
-% procede as usual and enter the measurement uncertainty / observation bounds 
+% proceed as usual and enter the measurement uncertainty / observation bounds 
 % without modification. In this case, however, the cross-validation error is 
 % significantly larger and we wish to manually include it into the dataset. 
 % Thus, we must ensure that the 'AddFitError' option is off.
